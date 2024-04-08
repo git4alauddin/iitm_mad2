@@ -1,17 +1,47 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <h1>Music App</h1>
+    
+    <hr>
+    <h3>navbar_comp</h3>
+    <Navbar />
+    <hr>
+    <br>
+    
+    <hr>
+    <h3>register_comp</h3>
+    <Register />
+    <hr>
+    <br>
+
+    <hr>
+    <h3>login_comp</h3>
+    <Login />
+    <hr>
+    <br>
+
+    <hr>
+    <h3>footer_comp</h3>
+    <Foot />
+    <hr>
+    <br>
+
   </div>
 </template>
 
 <script>
-import Home from './components/Home.vue'
+import Navbar from './components/Navbar.vue'
+import Foot from './components/Foot.vue'
+import Register from './components/Register.vue'
+import Login from './components/Login.vue'
 
 export default {
   name: 'App',
   components: {
-    Home
+    Navbar,
+    Foot, 
+    Register,
+    Login,
+   
   }
 }
 </script>
